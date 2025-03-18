@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>21. Crie um programa que leia a idade de um grupo de pessoas e exiba quantas são menores de idade e quantas são maiores de idade.</h1>
+
+    <script>
+        var qtd = parseInt(prompt("Quantas pessoas deseja verificar?"));
+        var menores = 0, maiores = 0;
+    
+        for (var i = 0; i < qtd; i++) {
+            var idade = parseInt(prompt("Digite a idade da pessoa " + (i+1) + ":"));
+            if (idade < 18) {
+                menores++;
+            } else {
+                maiores++;
+            }
+        }
+    
+        document.write("Menores de idade: " + menores + "<br>");
+        document.write("Maiores de idade: " + maiores);
+    </script>
+</body>
+</html>

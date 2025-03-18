@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>8. Escreva um programa que leia dois números inteiros e troque os seus valores, ou seja, o primeiro deve ficar com o valor do segundo e vice-versa.</h1>
+
+<script>
+    var num1 = parseInt(prompt("Digite o primeiro número:"));
+    var num2 = parseInt(prompt("Digite o segundo número:"));
+
+    document.write("Antes: num1 = " + num1 + ", num2 = " + num2 + "<br>");
+
+    var temp = num1;
+    num1 = num2;
+    num2 = temp;
+
+    document.write("Depois: num1 = " + num1 + ", num2 = " + num2);
+</script>
+</body>
+</html>
