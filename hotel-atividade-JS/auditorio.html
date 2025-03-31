@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let convidados = prompt("Informe a quantidade de convidados: ");
+
+        if (convidados > 350 || convidados <= 0) {
+            alert("Número de convidados inválido");
+        } else {
+            if (convidados <= 150) {
+                alert("Use o auditório Colorado");
+            } else {
+                let cadeirasExtras = convidados - 150;
+                alert("Use o auditório Laranja (inclua mais " + cadeirasExtras + " cadeiras)");
+            }
+        }
+
+        let aceita = prompt("Gostaria de efetuar a reserva? S/N");
+
+        if (aceita == "S" || aceita == "s") {
+            alert("Reserva efetuada com sucesso.");
+        } else {
+            alert("Reserva não efetuada.");
+        }
+    </script>
+</body>
+</html>
+
+

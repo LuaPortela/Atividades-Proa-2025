@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let convidados = Number(prompt("Qual o número de convidados para o evento?"));
+
+        if(convidados > 350){
+            alert("Capacidade de convidados excedida!");
+        } else{
+            let cafe = convidados * 0.2;
+
+            let agua = convidados * 0.5;
+
+            let salgados = convidados * 7;
+
+
+            let custoCafe = cafe * 0.80; 
+            let custoAgua = agua * 0.40; 
+            let custoSalgados = (salgados / 100) * 34; 
+            let custoTotal = custoCafe + custoAgua + custoSalgados;
+
+            alert("O evento precisará de " + cafe + " litros de café, " + agua + " litros de água, " + salgados + " salgados. O custo total do evento será de R$ " + custoTotal);
+
+            let aceita = prompt("Gostaria de efetuar a reserva? S/N");
+
+            if (aceita == "S" || aceita == "s") {
+                alert(nome + ", reserva efetuada com sucesso.");
+            } else {
+                alert("Reserva não efetuada.");
+            }
+        }
+    </script>
+</body>
+</html>
