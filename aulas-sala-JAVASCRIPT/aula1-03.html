@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <h1>Sua média é</h1>
+    <script>
+        let n1 = Number(window.prompt("Me de a primeira nota: "))
+        let n2 = Number(window.prompt("Me de a segunda nota: "))
+        let n3 = Number(window.prompt("Me de a terceira nota: "))
+        let n4 = Number(window.prompt("Me de a quarta nota: "))
+        let media = (n1 + n2 + n3 + n4)/4
+
+        document.write('Sua média é: ' + media + '<br>')
+        
+        if(media>=7){
+            document.write("Aluno! você esta aprovado!!!")
+        } else if(media>=6){
+            document.write('Você está de recuperação')
+        }
+        else {
+                document.write('Você é um verme inutil, reprovou lixo')
+            }
+            
+    </script>
+</body>
+</html>

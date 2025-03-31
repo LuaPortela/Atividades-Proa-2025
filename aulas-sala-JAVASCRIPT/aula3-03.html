@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> O usuário irá entrar no BK, terá a opção de 6 combos e quando escolher precisa aparecer o nome do combo, os ingredientes e o valor.</h1>
+
+    <script>
+        let combos = prompt("Bem-vindo ao BK! Escolha seu combo do 1 ao 6: ")
+
+        switch(combos){
+            case "1":
+                document.write('Combo Whopper®<br>Descrição: Pão com gergelim, maionese, alface, tomate, cebola, ketchup, picles, queijo derretido e um suculento hambúrguer de pura carne bovina grelhada no fogo.<br>Preço: A partir de R$ 27,20');
+                break;
+            case "2":
+                document.write('Combo Mega Stacker 2.0<br>Descrição: Dois hambúrgueres de carne bovina grelhada, queijo, bacon e molho stacker especial, servidos em um pão com gergelim.<br>Preço: A partir de R$ 27,20');
+                break;
+            case "3":
+                document.write('Combo Chicken Crispy<br>Descrição: Sanduíche de frango crocante com alface, maionese e pão com gergelim.<br>Preço: A partir de R$ 27,20');
+                break;
+            case "4":
+                document.write('Combo Whopper de Plantas<br>Descrição: Versão vegetal do clássico Whopper, com hambúrguer à base de plantas, alface, tomate, cebola, picles, ketchup e maionese, em um pão com gergelim.​<br>Preço: A partir de R$ 27,20');
+                break;
+            case "5":
+                document.write('Combo King Jr.™<br>Descrição: Inclui 1 sanduíche de pão, carne e queijo (podendo ser substituído por 4 unidades de BK® Chicken ou Chicken Jr.), 1 suco, 1 batata pequena e 1 brinquedo.<br>Preço: A partir de R$ 27,20');
+                break;
+            case "6":
+                document.write('Combo Stacker Duplo<br>Descrição: Dois hambúrgueres de carne bovina grelhada, queijo, bacon e molho stacker especial, servidos em um pão com gergelim.<br>Preço: A partir de R$ 26,89.');
+                break;
+            default:
+                document.write('Número inválido, escolha entre 1 e 6.');
+        }
+    </script>
+
+</body>
+</html>

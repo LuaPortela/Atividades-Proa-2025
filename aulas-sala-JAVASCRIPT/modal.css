@@ -1,0 +1,72 @@
+h1{
+    text-align: center;
+}
+
+.botao{
+    background-color: purple;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.botao:hover{
+    background-color: plum;
+    box-shadow: 5px 5px 5px indigo;
+}
+
+.janela_escura{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(70, 50, 50, 0.8); /* Tornei a opacidade um pouco mais forte */
+    visibility: hidden; /* Inicia invisível */
+}
+
+@keyframes abre_modal{
+    from{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    to{
+        opacity: 1;
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.modal, .imagem{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: abre_modal;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.imagem{
+    width: 470px;
+    height: 470px;
+}
+
+.fechar{
+    width: 16px;
+    height: 16px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    float: right;
+    cursor: pointer;
+    border: 1px solid;
+    text-align: center;
+}

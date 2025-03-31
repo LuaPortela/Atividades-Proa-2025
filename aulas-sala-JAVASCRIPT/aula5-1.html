@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+
+    <style>
+        .fundo {
+            background-color: bisque;
+            color: rgb(70,4,4);
+            text-align: center;
+            padding: 20px; /* Adiciona espaço interno ao redor do conteúdo */
+        }
+
+        .myImage {
+            width: 500px;
+            height: 400px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body class="fundo">
+    <h1 id="titulo">Testando mudança de cor de fundo Body, a cor da fonte e a imagem da página</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, ducimus soluta incidunt temporibus amet exercitationem ipsum asperiores adipisci commodi consequatur quae atque molestias ad qui necessitatibus accusamus natus doloremque modi!</p>
+
+    <input type="button" id="verde" value="tema verde" onclick="verde()"/>
+    <input type="button" id="azul" value="tema azul" onclick="azul()"/>
+    <input type="button" id="original" value="home original" onclick="original()"/>
+    <input type="button" id="escuro" value="modo escuro" onclick="escuro()"/>
+    <input type="button" id="daltonico" value="modo daltonico" onclick="daltonico()"/>
+    <input type="button" id="baixavisao" value="A+" onclick="baixavisao()"/>
+
+    <hr>
+
+    <img src="img/foto1.png" alt="neneio" class="myImage">
+
+    <script>
+        function verde() {
+            let texto = document.getElementById("titulo");
+            document.querySelector(".fundo").style.backgroundColor = "green";
+            document.querySelector(".fundo").style.color = "white";
+            document.querySelector(".myImage").src = "img/foto3.png";
+            document.querySelector(".fundo").style.fontSize = "15px";
+            texto.innerHTML = "Testando a função verde!!!";
+        }
+
+        function azul() {
+            let texto = document.getElementById("titulo");
+            document.querySelector(".fundo").style.backgroundColor = "blue";
+            document.querySelector(".fundo").style.color = "white";
+            document.querySelector(".myImage").src = "img/foto2.png";
+            document.querySelector(".fundo").style.fontSize = "15px";
+            texto.innerHTML = "Testando a função azul!!!";
+        }
+
+        function original() {
+            let texto = document.getElementById("titulo");
+            document.querySelector(".fundo").style.backgroundColor = "bisque";
+            document.querySelector(".fundo").style.color = "rgb(70,4,4)";
+            document.querySelector(".myImage").src = "img/foto1.png";
+            document.querySelector(".fundo").style.fontSize = "15px";
+            texto.innerHTML = "Testando a função original!!!";
+        }
+
+        function escuro() {
+            let texto = document.getElementById("titulo");
+            document.querySelector(".fundo").style.backgroundColor = "black";
+            document.querySelector(".fundo").style.color = "white";
+            document.querySelector(".myImage").src = "img/foto1.png";
+            document.querySelector(".fundo").style.fontSize = "15px";
+            texto.innerHTML = "Testando o modo escuro!!!";
+        }
+
+        function daltonico() {
+            let texto = document.getElementById("titulo");
+            document.querySelector(".fundo").style.backgroundColor = "pink";
+            document.querySelector(".fundo").style.color = "green";
+            document.querySelector(".myImage").src = "img/fotoDaltonico.png";
+            document.querySelector(".fundo").style.fontSize = "15px";
+            texto.innerHTML = "Testando o modo daltônico!!!";
+        }
+
+        function baixavisao(){
+            let texto = document.getElementById("titulo");
+            document.querySelector(".fundo").style.backgroundColor = "white";
+            document.querySelector(".fundo").style.color = "black";
+            document.querySelector(".fundo").style.fontSize = "30px";
+            document.querySelector(".myImage").src = "img/foto2.png";
+            texto.innerHTML = "Testando o modo baixa visão!!!";
+        }
+
+    </script>
+</body>
+</html>
