@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVA</title>
+</head>
+<body>
+    <script>
+        let dia = prompt("Qual o dia do evento? (ex: segunda,terça, sábado, etc.)").toLocaleUpperCase();
+
+        let hora = Number(prompt("Qual é a hora do evento? (ex.: 7, 10, 15, 23)"));
+
+        let disponivel = false;
+
+        if(dia == "segunda" || dia == "terça" || dia == "quarta" || dia == "quinta" || dia == "sexta" || dia == "sábado" || dia == "domingo");
+        if (hora >= 7 && hora <= 23) {
+                disponivel = true;
+            }
+        
+        else if (dia == "sabado" || dia == "domingo") {
+            if (hora >= 7 && hora <= 15) {
+                disponivel = true;
+            }
+        }
+
+        if (disponivel) {
+            let empresa = prompt("Qual o nome da empresa?");
+            alert("Restaurante reservado para " + empresa + ". " + dia + " às " + hora + "hs.");
+        } else {
+            alert("Restaurante indisponível");
+        }
+
+    </script>
+</body>
+</html>
